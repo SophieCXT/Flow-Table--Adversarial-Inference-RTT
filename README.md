@@ -1,7 +1,42 @@
-RTT
+# Overall Procedure
+- Power on PICA8
+- Connect ethernet devices (According to your network topology)
+
+# PICA 8 Hardware Switch Connection
+```
+E5-CSE-364-02 11$ sudo screen /dev/serial/by-id/usb-Keyspan__a_division_of_InnoSys_Inc._Keyspan_USA-19H-if00-port0 (using tab, wahtever file there is only one file, so tab and then type the number with it)115200
+[screen is terminating]
+E5-CSE-364-02 12$
+```
+
+Note: usb-Keyspan__a_division_of_InnoSys_Inc._Keyspan_USA-19H-if00-port0 (using tab, wahtever file there is only one file, so tab and then type the number with it) 
+Then space 115200
+
+###connected: username and password are both admin
+```
+Debian GNU/Linux 7 PICOS-OVS ttyS0
+
+PICOS-OVS login: admin
+Password: admin
+
+# connected succesfully
+admin@PICOS-OVS:~$
+admin@PICOS-OVS:~$
+```
+
+#Connecting Ryu Controller
+```
+# remember to use sudo
+sudo ryu-manager /export/home/sanchal/ryu/ryu/app/simple_switch_14_2.py --ofp-tcp-listen-port 5555 --verbose
+```
+
+
+
+
+Computing RTT
 ===
 
-CSC445 Assignment 1: An exercise in measuring transfer times and throughput over
+An exercise in measuring transfer times and throughput over
 TCP and UDP.
 
 
