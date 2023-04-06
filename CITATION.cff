@@ -1,0 +1,24 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Cache Size Inference: RTT Collection '
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Tian
+    family-names: Xie
+    email: tbx5027@psu.edu
+    orcid: 'https://orcid.org/0000-0003-0564-4078'
+repository-code: >-
+  https://github.com/SophieCXT/Flow-Table--Adversarial-Inference-RTT
+abstract: >-
+  From numerical simulation, we investigate the relation
+  between RTTs' performance and the status of flow table. 
+keywords:
+  - >-
+    multi-hop cache network, network cache inference, flow
+    table size inference, software defined network,
+    adversarial inference.
